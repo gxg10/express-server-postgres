@@ -23,7 +23,7 @@ db.sequelize.sync({force: true}).then(() => {
 require('./app/controllers/customer.route.js')(app);
  
 // Create a Server
-var server = app.listen(8081, function () {
+var server = app.listen(8080, function () {
  
   var host = server.address().address
   var port = server.address().port
